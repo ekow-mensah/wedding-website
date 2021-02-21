@@ -35,6 +35,10 @@ const appModule = (() => {
         }, 1000);
     }
 
+    let registerMakeItAHolidayEvent = () => {
+        
+    }
+
     return {
         init: init
     }
