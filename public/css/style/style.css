@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Libre+Caslon+Display&family=Rouge+Script&family=Yantramanav&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.menu-link {
+    text-transform: capitalize;
+    color         : #fff;
+    font-family   : 'Gothic A1', sans-serif;
+}
+
+.menu-link:hover {
+    color: gold;
+}
+
+.nav-right-section {
+    font-size: 9px;
+}
+
+.full-background {
+    height: 100vh;
+}
+
+.full-background__left-side {
+    background: #04505F;
+    height    : 100vh;
+}
+
+.full-background__right-side {
+    background: url('../../img/bouquet.jpg');
+    height    : 100vh;
+}
+
+.rsvp-button {
+    border       : solid 2px #fff;
+    background   : transparent;
+    position     : absolute;
+    text-align   : center;
+    color        : #fff;
+    font-size    : 25px;
+    line-height  : 25px;
+    height       : 130px;
+    width        : 135px;
+    left         : 50%;
+    top          : 40%;
+    padding-top  : 50px;
+    border-radius: 50%;
+    transform    : translateX(-50%);
+}
+
+.rsvp-button:hover {
+    background: transparent;
+    border    : solid 4px gold;
+    color     : #fff;
+    transition: ease-in-out 0.3s;
+}
+
+.names-section-container {
+    padding-top: 2%;
+}
+
+.names-section {
+    font-size     : 135px;
+    margin-left   : 10%;
+    color         : #fff;
+    text-transform: capitalize;
+    font-family   : 'Libre Caslon Display', serif;
+    text-align    : left;
+    margin-bottom : 0px;
+    line-height   : 165px;
+}
+
+.home {
+    padding-top   : 100px;
+    padding-bottom: 100px;
+}
+
+.hello-heading {
+    font-size     : 70px;
+    transform     : rotate(-15deg);
+    font-family   : 'Lily Script One', cursive;
+}
+
+.date-line {
+    font-size     : 18px;
+    letter-spacing: 3px;
+}
+
+.heart-icon {
+    font-size: 30px;
+    color    : #000;
+}
+
+.date-section-container {
+    padding-top: 45%;
+}
+
+.date-section {
+    margin-left: 11%;
+    font-size  : 20px;
+    color      : #fff;
+}
+
+.countdown-box {
+    border: 1px solid #dfdee3;
+    padding: 20px;
+    font-size: 60px;
+    font-weight: 700px;
+    font-family: "Josefin Sans", sans-serif;
+    color:#3EB489;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.time-interval-column {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+}
+
+.name-heading {
+    font-family: 'Libre Caslon Display', serif;
+    color: #3EB489;
+}
+
+.thumbnail-image {
+    width : 200px;
+    height: 200px;
+}
+
+.separator-before {
+    width  : 30%;
+    display: table-cell;
+}
+
+.separator-before {
+    width  : 30%;
+    display: table-cell;
+}
+
+.wedding-roles {
+    width        : 100%;
+    text-align   : center;
+    border-bottom: 1px solid #000;
+    line-height  : 0.1em;
+    margin       : 10px 0 20px;
+}
+
+.wedding-roles span {
+    background: #fff;
+    padding   : 0 10px;
+}
+
+.section-heading {
+    font-family : 'Josefin Sans', sans-serif;
+    font-size: 30px;
+}
+
+.events-section {
+    height               : 600px;
+    background           : url('../../img/events-background.jpg');
+    padding-top          : 5%;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    background-attachment: fixed;
+    background-position  : 50% calc(50% + 33px);
+}
+
+.event-card {
+    height     : 400px;
+    width      : 65% !important;
+    border     : solid 4px #fff;
+    font-family: 'PT Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event-card-heading {
+    padding      : 25px;
+    border-bottom: solid 1.5px #fff;
+}
+
+.event-card-heading h3 {
+    font-size: 22px;
+    color    : #fff;
+}
+
+.event-card-body {
+    color : #fff;
+    border: solid 1.5px #fff;
+}
+
+.event-card-icons {
+    font-size: 40px;
+}
+
+.event-card-body__left-side {
+    padding-top: 5% !important;
+}
+
+.event-card-body__left-side p {
+    margin-bottom: 0px;
+}
+
+.event-card-img {
+    height: 110px;
+    width : 130px;
+    left  : 11%;
+    margin-top: 3%;
+}
+
+.event-card-footer {
+    color: #fff;
+}
+
+.accommodation-section {
+    background: #fff;
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+}
+
+.accommodation-sections__img-container {
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.add-box-shadow {
+    box-shadow: 0 15px 25px -7px rgba(0,0,0,0.09), 0 -12px 10px -10px rgba(0,0,0,0.04);
+}
+
+.accommodation-sections__right-section {
+    padding: 20px 35px;
+    font-family : 'Gothic A1', sans-serif;
+    font-size: 15px;
+}
+
+.accommodation-sections__right-section h2 {
+    font-family : 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.left-section-img {
+    height: 100%;
+    width: 100%;
+}
+
+.accommodation-card-body {
+ font-size: 16px;
+}
+
+.btn-directions {
+    background:rgba(38, 91, 95, 1);
+    border: 0px;
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+    border-bottom: 5px solid teal;
+    text-align: center;
+}
+
+.btn-directions:hover {
+    background:rgba(38, 91, 95, 1);
+    border-bottom: 5px solid teal;
+}
+
+.rsvp-section {
+    height: 800px;
+    background: linear-gradient(to right bottom,
+            rgba(102, 0, 102, 0.2), rgba(38, 91, 95, 1)),
+        url('../../img//flowers.jpg');
+    padding-top               : 5%;
+    background-repeat         : no-repeat;
+    background-size           : cover;
+    background-attachment     : fixed;
+    background-position       : 50% calc(50% + 33px);
+    border-bottom-left-radius : 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.rsvp-form {
+    padding: 5%;
+}
+
+.rsvp-section__heading {
+    font-family : 'Rouge Script', cursive;
+    color       : #fff;
+    text-align  : center;
+    font-size   : 80px;
+    width       : 30%;
+    margin-left : auto;
+    margin-right: auto;
+    transform   : rotate(-10deg);
+}
+
+.btn-submit-rsvp {
+    color     : gold;
+    background: #04505F;
+    padding   : 10px;
+}
+
+.make-it-a-holiday-label {
+    color: white;
+    font-size: 18px;
+}
+
+
