@@ -114,7 +114,7 @@ body {
     border: 1px solid #dfdee3;
     padding: 20px;
     font-size: 60px;
-    font-weight: 700px;
+    font-weight: bold;
     font-family: "Josefin Sans", sans-serif;
     color:#3EB489;
     width: 40%;
@@ -125,13 +125,19 @@ body {
 .time-interval-column {
     font-size: 14px;
     text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Gothic A1", sans-serif;
     color: #000;
+    font-weight: normal;
+}
+
+.bio {
+    font-size: 12px;
 }
 
 .name-heading {
     font-family: 'Libre Caslon Display', serif;
     color: #3EB489;
+    font-weight: 600;
 }
 
 .thumbnail-image {
@@ -154,12 +160,13 @@ body {
     text-align   : center;
     border-bottom: 1px solid #000;
     line-height  : 0.1em;
-    margin       : 10px 0 20px;
+    margin       : 40px 0 20px;
 }
 
 .wedding-roles span {
     background: #fff;
     padding   : 0 10px;
+    font-size: 13px;
 }
 
 .section-heading {
