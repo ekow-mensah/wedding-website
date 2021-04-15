@@ -3,10 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>The Wedding Website of Ekow and Yvonne</title>
   <link rel="stylesheet" type="text/css" href="css/ionicons/ionicons.min.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.min.css">
+  <link rel="stylesheet" type="text/css" href="css/datepicker/mc-calendar.min.css">
   <link rel="stylesheet" type="text/css" href="css/style/styles.css" />
 </head>
 
@@ -14,28 +18,25 @@
   <section class="home-section">
     <section class="home-section-container container-fluid">
       <section class="row home-section-container">
-        <section class="col-sm-12 col-md-6 col-lg-6 home-left-section">
-          <nav class="navbar">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#our-story">OUR STORY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#events">EVENTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#gallery">GALLERY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#accommodation">ACCOMMODATION</a>
-              </li>
-            </ul>
-          </nav>
+        <section class="col-sm-12 col-md-12 col-lg-6 home-left-section">
+          <header id="navigation" class="overlay">
+            <button class="ion-ios-close-outline close-btn"></button>
 
-          <section class="container-fluid">
+            <nav class="overlay-content">
+              <a class="nav-link" href="#home">HOME</a>
+              <a class="nav-link" href="#our-story">OUR STORY</a>
+              <a class="nav-link" href="#events">EVENTS</a>
+              <a class="nav-link" href="#accommodation">ACCOMMODATION</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gallery">GALLERY</a>
+            </nav>
+          </header>
+
+          <div class="nav-icon-container">
+            <span class="ion-android-menu nav-icon"></span>
+          </div>
+
+          <section class="container-fluid left-section-main-content">
             <h2 id="curved-heading" class="text-center main-heading serif-font"> WE ARE TYING THE KNOT </h2>
             <img src="img/wedding-icon.png" class="wedding-icon mx-auto d-block">
             <h2 class="text-center name-display">Ekow & Yvonne </h2>
@@ -48,7 +49,7 @@
             </div>
           </section>
         </section>
-        <section class="col-sm-12 col-md-6 col-lg-6 home-right-section-bg"></section>
+        <section class="col-sm-12 col-md-12 col-lg-6 home-right-section-bg"></section>
       </section>
     </section>
   </section>
@@ -61,8 +62,8 @@
       </div>
       <div class="row">
         <!-- EVENTS LEFT SECTION -->
-        <div class="col-sm-12 col-md-4 col-lg-4 events-left">
-          <div class="card mt-5">
+        <div class="col-sm-12 col-md-12 col-lg-4 events-left">
+          <div class="card mt-5 event-card">
             <div class="card-body">
               <h3 class="card-title text-center sub-heading"> Traditional Enagement</h3>
               <div class="card-text">
@@ -91,12 +92,12 @@
           </div>
         </div>
         <!-- EVENTS MID SECTION -->
-        <div class="col-sm-12 col-md-3 col-lg-3 bouquet-column">
+        <div class="col-sm-12 col-md-12 col-lg-3 bouquet-column">
           <img class="event-logo mx-auto d-block" src="img/logo.png">
         </div>
         <!-- EVENTS RIGHT SECTION -->
-        <div class="col-sm-12 col-md-4 col-sm-4 events-right-section">
-          <div class="card mt-5">
+        <div class="col-sm-12 col-md-12 col-lg-4 events-right-section">
+          <div class="card mt-5 event-card">
             <div class="card-body">
               <h3 class="card-title text-center sub-heading">Wedding Ceremony</h3>
               <div class="card-text">
@@ -137,7 +138,7 @@
       </div>
       <div class="container our-story-text">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <p>Quisque blandit pretium neque et fermentum. In eget mi erat. In hac habitasse platea dictumst. Ut
               hendrerit ac metus non tincidunt. Ut scelerisque, neque in commodo vehicula, quam tellus lobortis purus,
               eget tincidunt ante mi non mi. Donec eget consequat enim. Nam ornare, nisi nec ultrices faucibus, sem
@@ -150,7 +151,7 @@
     </div>
   </section>
 
-  <section id="#accommodation" class="accommodation-section">
+  <section id="accommodation" class="accommodation-section">
     <div class="text-center">
       <span class="events-heading-small"> Accommodation </span>
     </div>
@@ -158,8 +159,8 @@
     <div class="container-fluid">
       <div class="container accommodation-section-inner">
         <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="card accommodation-card w-75">
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card accommodation-card w-75 mb-5">
               <img src="img/accra-marriot-hotel.png" height="200" width="200" class="card-img-top"
                 alt="Accra Marriot Hotel">
               <h5 class="accommodation-label">Accra Marriot Hotel</h5>
@@ -173,8 +174,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="card accommodation-card w-75">
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="card accommodation-card w-75 mb-5">
               <img src="img/movenpick-hotel.jpg" height="200" width="200" class="card-img-top"
                 alt="Movenpick Ambassador Hotel">
               <h5 class="accommodation-label">Mövenpick Ambassador Hotel</h5>
@@ -187,10 +188,10 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="col-sm-12 col-md-12 col-lg-4 mb-5">
             <div class="card accommodation-card w-75">
               <img src="img/airbnb.jpg" height="200" width="200" class="card-img-top" alt="Accra Marriot Hotel">
-              <h5 class="accommodation-label">AirBnB</h5>
+              <h5 class="accommodation-label">A{irBnB</h5>
               <div class="card-body">
                 <p class="card-text">There are a few options in Kasoa which you can choose from. If you need
                   help bookings send us an email at yes2mensah@gmail.com.
@@ -208,61 +209,86 @@
     <h1 class="d-inline heading events-heading-big"> Are You </h1>
     <span class="events-heading-small"> Attending?</span>
   </div>
-  <section id="rsvp" class="rsvp-section">
+  <section id="rsvp" class="rsvp-section pt-3">
+    <div id="rsvp-alert" class="alert alert-dismissible fade show rsvp-alert p-3" role="alert">
+      <p class="result-text"></p>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
     <div class="container rsvp-form-container center">
       <section class="rsvp-form">
         <div class="mb-3">
-          <input type="email" class="p-3 w-100" name="email" placeholder="Email Address">
+          <input type="email" class="p-3 w-100" name="email" id="email" placeholder="Email Address">
+          <span id="email-validation-text" class="rsvp-validation-text"></span>
         </div>
         <div class="row mb-3">
-          <div class="col-sm-12 col-md-6">
-            <input type="text" class="p-3 w-100" name="firstname" placeholder="First Name">
+          <div class="col-sm-12 col-md-12 col-lg-6 pb-2">
+            <input type="text" class="p-3 w-100" name="firstname" id="first-name" placeholder="First Name">
+            <span id="firstname-validation-text" class="rsvp-validation-text"></span>
           </div>
-          <div class="col-sm-12 col-md-6">
-            <input type="text" class="p-3 w-100" name="lastname" placeholder="Last Name">
+          <div class="col-sm-12 col-md-12 col-lg-6 pb-2">
+            <input type="text" class="p-3 w-100" name="lastname" id="last-name" placeholder="Last Name">
+            <span id="lastname-validation-text" class="rsvp-validation-text"></span>
           </div>
         </div>
         <div class="row mb-3">
-          <div class="col-sm-12 col-md-6">
-            <input type="text" class="p-3 w-100" name="attendees" placeholder="Who else is with you?">
+          <div class="col-sm-12 col-md-12 col-lg-6 pb-2">
+            <input type="text" class="p-3 w-100" name="attendees" id="additional-guests"
+              placeholder="Who else is with you?">
           </div>
-          <div class="col-sm-12 col-md-6">
-            <select id="event" class="p-3 w-100">
+          <div class="col-sm-12 col-md-12 col-lg-6 pb-2">
+            <select id="events-select" class="p-3 w-100">
               <option value="null">What Event Are You Attending?</option>
               <option value="All Events">All Events</option>
               <option value="Traditional Wedding">Traditional Wedding</option>
-              <option value="Wedding Ceremony">Wedding Ceremony</option>
-              <option value="Wedding Reception">Wedding Reception</option>
+              <option value="Wedding Ceremony And Party">Wedding Ceremony & Party</option>
             </select>
+            <span id="events-validation-text" class="rsvp-validation-text"></span>
           </div>
         </div>
         <div class="row mb-3">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="form-check">
               <label class="form-check-label make-it-a-holiday-label" for="makeItAHoliday">
                 Make It A Holiday
               </label>
-              <input class="form-check-input" type="checkbox" value="" id="makeItAHoliday">
+              <input class="form-check-input" type="checkbox" value="" id="holiday">
             </div>
           </div>
         </div>
-        <div>
-          <div class="w-30">
-            <button class="btn btn-sage btn-submit-rsvp">Submit</button>
+        <div class="row pt-3 pb-3 holiday-dates-section" id="holiday-dates-section">
+          <div>
+            <label class="form-check-label make-it-a-holiday-label">
+              Select Start And End Dates
+            </label>
+            <span class="d-block red-text pt-2 pb-2"> Dates a week to the wedding (i.e. 1th April - 9th Aprill 2022)
+              are restricted days.</span>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-3">
+            <input type="text" class="holiday-date-pickers p-3 w-100" id="start-date-picker" placeholder="Start Date">
+            <span id="startdate-validation-text" class="rsvp-validation-text"></span>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-3">
+            <input type="text" class="holiday-date-pickers p-3 w-100" id="end-date-picker" placeholder="End Date">
+            <span id="enddate-validation-text" class="rsvp-validation-text"></span>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-md-12">
+          <div class="row">
+            <div class="w-30">
+              <button class="btn btn-sage btn-submit-rsvp">Submit</button>
+            </div>
           </div>
         </div>
       </section>
   </section>
-  </div>
 
-  </section>
 
-  <div class="container-fluid">
+  <div class="container-fluid p-0">
     <div class="text-center section-space">
       <h1 class="d-inline heading events-heading-big"> Travel </h1>
       <span class="events-heading-small">Checklist</span>
     </div>
-    <section id="travel-checklist" class="container-fluid travel-checklist-section mt-3"></section>
+    <section id="travel-checklist" class="container-fluid travel-checklist-section mt-3 p-0"></section>
   </div>
 
   <section id="gallery" class="gallery-section">
@@ -299,6 +325,7 @@
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/flipdown.min.js"></script>
   <script src="js/jquery.arctext.js"></script>
+  <script src="js/mc-calendar.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 
