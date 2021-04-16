@@ -53,8 +53,9 @@ const appModule = (function () {
     }
 
     let initCloseAlertEvent = function () {
-        $('.btn-close').click(function () {
+        $('.rsvp-alert-close').click(function () {
             $('#rsvp-alert').hide();
+            $(".rsvp-alert-close").hide();
         })
     }
     let getDisabledDates = function () {
@@ -187,6 +188,7 @@ const appModule = (function () {
                 $('#rsvp-alert').addClass("alert-danger");
                 $('.result-text').html("Could not send your RSVP request. Please try again in a few minutes.");
                 $("#rsvp-alert").show();
+                $(".rsvp-alert-close").show();
             }
         });
     }

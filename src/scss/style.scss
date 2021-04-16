@@ -110,6 +110,7 @@ body {
         .left-section-main-content {
             position: relative;
             margin-top: 10rem;
+            height: 100vh;
         }
 
         .main-heading {
@@ -138,6 +139,7 @@ body {
         }
 
         .home-right-section-bg {
+            height: 100vh;
             background: url('../../img/bridge-groom.jpg');
             background-repeat: no-repeat;
             background-position: 65% 25%;
@@ -325,6 +327,10 @@ body {
 
     #rsvp-alert {
         z-index: 100
+    }
+
+    .rsvp-alert-close {
+        display: none;
     }
 }
 
