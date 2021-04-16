@@ -557,6 +557,7 @@ body {
 
     .home-right-section-bg {
         display: inline-block;
+        background-position: 10% 25% !important;
     }
 
     #event-countdown {
@@ -587,6 +588,13 @@ body {
 
     .rsvp-form-container {
        padding: 100px !important;
+    }
+}
+
+@media  screen and (min-width: 1500px) {
+    .home-right-section-bg {
+        display: inline-block;
+        background-position: 65% 25% !important;
     }
 }
 
