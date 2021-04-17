@@ -28,7 +28,6 @@
               <a class="nav-link" href="#events">EVENTS</a>
               <a class="nav-link" href="#accommodation">ACCOMMODATION</a>
               <a class="nav-link" href="#rsvp">RSVP</a>
-              <a class="nav-link" href="#gallery">GALLERY</a>
             </nav>
           </header>
 
@@ -63,7 +62,7 @@
       <div class="row">
         <!-- EVENTS LEFT SECTION -->
         <div class="col-sm-12 col-md-12 col-lg-4 events-left">
-          <div class="card mt-5 event-card">
+          <div class="card mt-5 event-card">  
             <div class="card-body">
               <h3 class="card-title text-center sub-heading"> Traditional Enagement</h3>
               <div class="card-text">
@@ -129,11 +128,11 @@
     </div>
   </section>
 
-  <section id="our-story" class="our-story-section">
+  <section id="our-story" class="our-story-section mb-0">
     <div class="container-fluid our-story-text-container">
       <div class="text-center">
         <h1 class="d-inline events-heading-big"> Our </h1>
-        <span class="events-heading-small"> Story </span>
+        <span class="events-heading-small"> Journey </span>
         <span><img class="flower-icon" src="img/flower1.png" /></span>
       </div>
       <div class="container our-story-text">
@@ -151,7 +150,39 @@
     </div>
   </section>
 
-  <section id="accommodation" class="accommodation-section">
+  <section id="gallery" class="gallery-section">
+    <section class="container pt-5 d-flex">
+      <div class="gallery-row justify-content-center">
+        <div class="gallery-col">
+          <img src="img/IMG_5796.jpg" alt="Picture of Yvonne" class="gallery-image">
+          <img src="img/Snapchat-1177368871.jpg" alt="On the train towards Heathrow" class="gallery-image">
+          <img src="img/IMG-20190112-WA0003.jpg" alt="Masters graduation - Sheffield" class="gallery-image">
+        </div>
+        <div class="gallery-col">
+          <img src="img/IMG_5918.jpg" class="gallery-image" alt="Ekow Selfie">
+          <img src="img/IMG_5899.jpg" alt="Picture of Yvonne" class="gallery-image">
+          <img src="img/IMG-20161216-WA0002.jpg" alt="Jesus Jam Keele year 2 dinner" class="gallery-image">
+        </div>
+        <div class="gallery-col">
+          <img src="img/IMG_5803.jpg" class="gallery-image" alt="Picture Of Yvonne">
+          <img src="img/Snapchat-1203702225.jpg" alt=" In the Keele library" class="gallery-image">
+          <img src="img/IMG-20180719-WA0001.jpg" alt="Ekow Selfie" class="gallery-image">
+        </div>
+        <div class="gallery-col">
+          <img src="img/DSC_0198.JPG" alt="Jesus Jam Keele year 3 dinner" class="gallery-image">
+          <img src="img/IMG-20171121-WA0003.jpg" alt="Ekow ministering on keys" class="gallery-image">
+          <img src="img/IMG-20170610-WA0001.jpg" alt="Jesus Jam Keele year 3 dinner" class="gallery-image">
+        </div>
+        <!-- <div class="gallery-col">
+          <img src="img/IMG_5917.jpg" alt="Picture of Yvonne" class="gallery-image">
+          <img src="img/IMG_20181230_224414_027.jpg" alt="Selfie of Ekow" class="gallery-image">
+          <img src="img/IMG_5849.jpg" class="gallery-image">
+        </div> -->
+      </div>
+    </section>
+  </section>
+
+  <section id="accommodation" class="accommodation-section section-space">
     <div class="text-center">
       <span class="events-heading-small"> Accommodation </span>
     </div>
@@ -210,8 +241,8 @@
     <span class="events-heading-small"> Attending?</span>
   </div>
   <div id="rsvp-alert" class="alert alert-dismissible fade show rsvp-alert p-3" role="alert">
-    <p class="result-text"></p>
-    <button type="button" class="rsvp-alert-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <p class="result-text text-center"></p>
+    <button type="button" class="rsvp-alert-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   <section id="rsvp" class="rsvp-section pt-3">
     <div class="container rsvp-form-container center">
@@ -291,34 +322,25 @@
     <section id="travel-checklist" class="container-fluid travel-checklist-section mt-3 p-0"></section>
   </div>
 
-  <section id="gallery" class="gallery-section">
-    <div class="text-center">
-      <span class="events-heading-small" width="100%" height="100%"> Gallery </span>
-    </div>
-
-    <section class="container pt-5 d-flex">
-      <div class="gallery-row justify-content-center">
-        <div class="gallery-col">
-          <img src="img/IMG_5915.jpg" alt="Picture of Yvonne sitting down" class="gallery-image">
-          <img src="img/IMG_5842.jpg" alt="Picture of Yvonne black and white" class="gallery-image">
-        </div>
-        <div class="gallery-col">
-          <img src="img/IMG_5918.jpg" class="gallery-image">
-          <img src="img/IMG_5917.jpg" alt="Picture of Yvonne" class="gallery-image">
-        </div>
-        <div class="gallery-col">
-          <img src="img/IMG_5803.jpg" class="gallery-image">
-          <img src="img/IMG_5849.jpg" class="gallery-image">
-        </div>
-      </div>
-    </section>
-  </section>
-
-
+  
   <section class="footer w-100 mt-5">
     <p class="text-center p-1 mb-0"> &copy; Copyright #YES2MENSAH2022 </p>
   </section>
 
+  <div class="modal fade gallery-modal" id="gallery-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title gallery-modal-title text-center"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body gallery-modal-body text-center"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sage" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="js/jquery.min.js"></script>

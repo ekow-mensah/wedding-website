@@ -10,6 +10,7 @@ const appModule = (function () {
         initCloseNavEvent();
         initNavLinkClickAction();
         initCloseAlertEvent();
+        initGalleryImageEnlargeEvent();
         $('#curved-heading').arctext({ radius: 300 });
     }
 
@@ -182,6 +183,7 @@ const appModule = (function () {
                     $('.result-text').html(response.message);
                 }
                 $("#rsvp-alert").show();
+                $('.rsvp-alert-close');
                 clearAllFields();
             },
             error: function (response) {
@@ -189,8 +191,11 @@ const appModule = (function () {
                 $('.result-text').html("Could not send your RSVP request. Please try again in a few minutes.");
                 $("#rsvp-alert").show();
                 $(".rsvp-alert-close").show();
+                $(".rsvp-alert-close").show();
             }
         });
+
+        window.location.href = "#rsvp";
     }
 
 
@@ -203,6 +208,27 @@ const appModule = (function () {
         $('#additional-guests').val("");
         $('#events-select').val("");
         $('#holiday').prop('checked', false);
+    }
+
+    let initGalleryImageEnlargeEvent = function () {
+        $('.gallery-image').click(function (event) {
+            let img = document.createElement("IMG");
+            let source = $(event.target).attr("src");
+
+            let title = $(event.target).attr("alt");
+            console.log(title);
+            $('.gallery-modal-title').html(title);
+
+            img.src = source;
+            img.style.height = "auto";
+            img.style.width = "100%";
+            $('.gallery-modal-body').append(img);
+            $('#gallery-modal').modal('show');
+        });
+
+        $('#gallery-modal').on('hide.bs.modal', function () {
+            $('.gallery-modal-body').empty();
+        });
     }
 
     return {
