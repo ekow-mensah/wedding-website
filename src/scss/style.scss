@@ -279,14 +279,16 @@ body {
 .accommodation-section {
     height: 100%;
 
+    .accommodation-notice {
+        margin: 0px 16px 16px 16px;
+    }
+
     .accommodation-section-inner {
         height: 100%;
 
         .accommodation-label {
-            position        : absolute;
-            top             : 46%;
             background-color: $white;
-            padding         : 10px;
+            text-align      : left;
         }
 
         .accommodation-card {
@@ -449,10 +451,6 @@ body {
         padding: 20px !important;
     }
 
-    .accommodation-label {
-        top: 44% !important;
-    }
-
     .rsvp-form-container {
         padding: 30px !important;
     }
@@ -468,6 +466,10 @@ body {
 
     .travel-checklist-section {
         background-position: -195px 10px !important;
+    }
+
+    .accommodation-notice {
+        width: 100%;
     }
 }
 
@@ -510,10 +512,6 @@ body {
 
     .our-story-text {
         padding: 100px;
-    }
-
-    .accommodation-label {
-        top: 50% !important;
     }
 
     .rsvp-form-container {
@@ -583,12 +581,12 @@ body {
         padding: 80px 200px !important;
     }
 
-    .accommodation-label {
-        top: 46% !important;
-    }
-
     .rsvp-form-container {
         padding: 100px !important;
+    }
+
+    .accommodation-notice {
+        width: 50%;
     }
 }
 
