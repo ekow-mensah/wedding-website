@@ -606,7 +606,15 @@ body {
 
   .home-section-container {
     .left-section-main-content {
-      margin-top: 10rem !important;
+      margin-top: 5rem !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .home-section-container {
+    .left-section-main-content {
+      margin-top: 12rem !important;
     }
   }
 }
