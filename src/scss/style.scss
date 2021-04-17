@@ -112,7 +112,7 @@ body {
     .left-section-main-content {
       position: relative;
       margin-top: 10rem;
-      height: 100vh;
+      height: calc(100vh - 40px);
     }
 
     .main-heading {
@@ -554,7 +554,7 @@ body {
 
   .home-section-container {
     .left-section-main-content {
-      margin-top: 10rem !important;
+      margin-top: 3rem !important;
     }
 
     .main-heading {
@@ -602,6 +602,12 @@ body {
   .home-right-section-bg {
     display: inline-block;
     background-position: 65% 25% !important;
+  }
+
+  .home-section-container {
+    .left-section-main-content {
+      margin-top: 10rem !important;
+    }
   }
 }
 
