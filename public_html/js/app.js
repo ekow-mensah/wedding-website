@@ -11,6 +11,7 @@ const appModule = (function () {
         initNavLinkClickAction();
         initCloseAlertEvent();
         initGalleryImageEnlargeEvent();
+        openMapModal();
         $('#curved-heading').arctext({ radius: 300 });
     }
 
@@ -61,6 +62,12 @@ const appModule = (function () {
     }
     let getDisabledDates = function () {
         let disabledDates = [
+            new Date(2022, 02, 27),
+            new Date(2022, 02, 28),
+            new Date(2022, 02, 29),
+            new Date(2022, 02, 30),
+            new Date(2022, 02, 31),
+
             new Date(2022, 03, 01),
             new Date(2022, 03, 02),
             new Date(2022, 03, 03),
@@ -229,6 +236,12 @@ const appModule = (function () {
         $('#gallery-modal').on('hide.bs.modal', function () {
             $('.gallery-modal-body').empty();
         });
+    }
+
+    let openMapModal = function () {
+        $('.btn-map-view').click(function () {
+            $('.map-modal').modal('show');
+        })
     }
 
     return {

@@ -2,621 +2,621 @@
 @import "./fonts";
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: $gothic-a1;
-  margin: 0;
-  height: 100%;
+    font-family: $gothic-a1;
+    margin     : 0;
+    height     : 100%;
 }
 
 .nav-icon-container {
-  position: fixed;
-  background: $white;
-  padding: 10px;
-  font-size: 50px;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  z-index: 200;
-  margin-left: 30px;
-  top: 40px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position     : fixed;
+    background   : $white;
+    padding      : 10px;
+    font-size    : 50px;
+    border-radius: 50%;
+    width        : 70px;
+    height       : 70px;
+    z-index      : 200;
+    margin-left  : 30px;
+    top          : 40px;
+    box-shadow   : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .nav-icon {
-  color: $sage;
-  position: absolute;
-  top: 2px;
-  left: 15px;
+    color   : $sage;
+    position: absolute;
+    top     : 2px;
+    left    : 15px;
 
-  &:hover {
-    cursor: pointer;
-  }
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background-color: $white;
-  overflow-x: hidden;
-  transition: 0.8s;
+    height          : 100%;
+    width           : 0;
+    position        : fixed;
+    z-index         : 1;
+    left            : 0;
+    top             : 0;
+    background-color: $white;
+    overflow-x      : hidden;
+    transition      : 0.8s;
 
-  a {
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 30px;
-    color: $sage;
-    display: block;
-    transition: 0.5s;
-    border: soild 2px;
-    background-size: 230%;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: uppercase;
-    background-image: linear-gradient(
-      120deg,
-      transparent 0%,
-      transparent 50%,
-      $sage 50%
-    );
+    a {
+        padding        : 10px 20px;
+        text-decoration: none;
+        font-size      : 30px;
+        color          : $sage;
+        display        : block;
+        transition     : 0.5s;
+        border         : soild 2px;
+        background-size: 230%;
+        width          : 30%;
+        margin-left    : auto;
+        margin-right   : auto;
+        text-transform : uppercase;
+        background-image: linear-gradient(120deg,
+                transparent 0%,
+                transparent 50%,
+                $sage 50%);
 
-    &:hover,
-    &:focus {
-      background-position: 100%;
-      color: $white;
-      transform: translateX(10px);
+        &:hover,
+        &:focus {
+            background-position: 100%;
+            color              : $white;
+            transform          : translateX(10px);
+        }
     }
-  }
 
-  .close-btn {
-    position: aboslute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
+    .close-btn {
+        position : aboslute;
+        top      : 20px;
+        right    : 45px;
+        font-size: 60px;
+    }
 }
 
 .close-btn {
-  background: #fff;
-  font-size: 60px;
-  float: right;
-  border: none;
-  color: $sage;
-  padding-right: 60px;
+    background   : #fff;
+    font-size    : 60px;
+    float        : right;
+    border       : none;
+    color        : $sage;
+    padding-right: 60px;
 }
 
 .overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+    position  : relative;
+    top       : 25%;
+    width     : 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .home-section {
-  background: $sage;
-  display: inline-block;
-  width: 100%;
-  height: 100vh;
+    background: $sage;
+    display   : inline-block;
+    width     : 100%;
+    height    : 100vh;
 
-  .home-section-container {
-    height: 100vh;
+    .home-section-container {
+        height: 100vh;
 
-    .left-section-main-content {
-      position: relative;
-      margin-top: 10rem;
-      height: calc(100vh - 40px);
+        .left-section-main-content {
+            position  : relative;
+            margin-top: 10rem;
+            height    : calc(100vh - 40px);
+        }
+
+        .main-heading {
+            margin-top   : 3rem;
+            margin-bottom: 0rem;
+            font-weight  : 400;
+            color        : $white;
+        }
+
+        .name-display {
+            font-size  : 90px;
+            font-family: $rogue-script;
+            color      : $white;
+            font-weight: normal;
+        }
+
+        .wedding-icon {
+            height: 150px;
+            width : 150px;
+        }
+
+        #event-countdown {
+            width       : 70%;
+            margin-left : auto;
+            margin-right: auto;
+        }
+
+        .home-right-section-bg {
+            height             : 100vh;
+            background         : url("../../img/bridge-groom.jpg");
+            background-repeat  : no-repeat;
+            background-position: 65% 25%;
+            background-size    : cover;
+        }
+
+        .home-rsvp-btn-container {
+            padding-bottom: 30px;
+        }
     }
-
-    .main-heading {
-      margin-top: 3rem;
-      margin-bottom: 0rem;
-      font-weight: 400;
-      color: $white;
-    }
-
-    .name-display {
-      font-size: 90px;
-      font-family: $rogue-script;
-      color: $white;
-      font-weight: normal;
-    }
-
-    .wedding-icon {
-      height: 150px;
-      width: 150px;
-    }
-
-    #event-countdown {
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .home-right-section-bg {
-      height: 100vh;
-      background: url("../../img/bridge-groom.jpg");
-      background-repeat: no-repeat;
-      background-position: 65% 25%;
-      background-size: cover;
-    }
-
-    .home-rsvp-btn-container {
-      padding-bottom: 30px;
-    }
-  }
 }
 
 .our-story-section {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+    margin-top   : 8rem;
+    margin-bottom: 8rem;
 
-  .our-story-text-container {
-    background: $dustypink;
-    height: 100%;
-    padding: 100px;
-  }
+    .our-story-text-container {
+        background: $dustypink;
+        height    : 100%;
+        padding   : 100px;
+    }
 
-  .flower-icon {
-    height: 80px;
-    width: 80px;
-    margin-bottom: 20px;
-  }
+    .flower-icon {
+        height       : 80px;
+        width        : 80px;
+        margin-bottom: 20px;
+    }
 
-  .heading {
-    font-family: $libre-calson;
-    font-size: 3rem;
-  }
+    .heading {
+        font-family: $libre-calson;
+        font-size  : 3rem;
+    }
 
-  .our-story-text {
-    padding: 80px 200px;
-    line-height: 30px;
-    font-size: 1.1rem;
-    text-align: center;
-    background: $white;
-    color: $darkgreen;
-    font-family: $libre-baskeville;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-  }
+    .our-story-text {
+        padding    : 80px 200px;
+        line-height: 30px;
+        font-size  : 1.1rem;
+        text-align : center;
+        background : $white;
+        color      : $darkgreen;
+        font-family: $libre-baskeville;
+        box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition : 0.3s;
+    }
 }
 
 .events-section {
-  height: 100%;
-  margin-bottom: 8rem;
-  padding-bottom: 5rem;
+    height        : 100%;
+    margin-bottom : 8rem;
+    padding-bottom: 5rem;
 
-  .sub-heading {
-    font-family: $libre-calson;
-    font-size: 35px;
-    color: $sage;
-  }
-
-  .event-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .bouquet-column {
-    padding-top: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .event-icons {
-    color: $sage;
-    font-size: 4rem;
-  }
-
-  .event-sub-text {
-    font-family: $yantramanav;
-    font-size: 1.2rem;
-    color: $sage;
-  }
-
-  .event-logo {
-    width: auto;
-    height: 350px;
-  }
-
-  .events-rsvp-btn,
-  .events-btn {
-    background: $sage;
-    color: $dustypink;
-    font-size: 1.3rem;
-    width: 15%;
-  }
-
-  .event-card-footer {
-    background: $sage;
-    padding: 0px;
-
-    .btn-map-view {
-      padding: 10px;
-      font-size: 16px;
+    .sub-heading {
+        font-family: $libre-calson;
+        font-size  : 35px;
+        color      : $sage;
     }
-  }
+
+    .event-card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .bouquet-column {
+        padding-top : 10rem;
+        margin-left : auto;
+        margin-right: auto;
+    }
+
+    .event-icons {
+        color    : $sage;
+        font-size: 4rem;
+    }
+
+    .event-sub-text {
+        font-family: $yantramanav;
+        font-size  : 1.2rem;
+        color      : $sage;
+    }
+
+    .event-logo {
+        width : auto;
+        height: 350px;
+    }
+
+    .events-rsvp-btn,
+    .events-btn {
+        background: $sage;
+        color     : $dustypink;
+        font-size : 1.3rem;
+        width     : 15%;
+    }
+
+    .event-card-footer {
+        background: $sage;
+        padding   : 0px;
+
+        .btn-map-view {
+            padding  : 10px;
+            font-size: 16px;
+        }
+    }
 }
 
 .heading {
-  font-size: 40px;
-  font-family: $libre-calson;
+    font-size  : 40px;
+    font-family: $libre-calson;
 }
 
 .gallery-section {
-  position: relative;
+    position: relative;
 
-  .gallery-row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px 5px;
-  }
-
-  .gallery-col {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0px 5px;
-
-    img {
-      margin-top: 8px;
-      vertical-align: middle;
-      width: 100%;
-      height: auto;
-      transition: 0.5s;
-
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.03);
-      }
+    .gallery-row {
+        display  : flex;
+        flex-wrap: wrap;
+        padding  : 0px 5px;
     }
-  }
+
+    .gallery-col {
+        flex     : 25%;
+        max-width: 25%;
+        padding  : 0px 5px;
+
+        img {
+            margin-top    : 8px;
+            vertical-align: middle;
+            width         : 100%;
+            height        : auto;
+            transition    : 0.5s;
+
+            &:hover {
+                cursor   : pointer;
+                transform: scale(1.03);
+            }
+        }
+    }
 }
 
 .accommodation-section {
-  height: 100%;
-
-  .accommodation-section-inner {
     height: 100%;
 
-    .accommodation-label {
-      position: absolute;
-      top: 46%;
-      background-color: $white;
-      padding: 10px;
-    }
+    .accommodation-section-inner {
+        height: 100%;
 
-    .accommodation-card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      font-size: 16px;
-      margin-left: auto;
-      margin-right: auto;
+        .accommodation-label {
+            position        : absolute;
+            top             : 46%;
+            background-color: $white;
+            padding         : 10px;
+        }
+
+        .accommodation-card {
+            box-shadow  : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            font-size   : 16px;
+            margin-left : auto;
+            margin-right: auto;
+        }
     }
-  }
 }
 
 .rsvp-section {
-  background: url("../../img/rsvp.jpg");
-  height: 700px;
-  position: relative;
+    background       : url("../../img/rsvp.jpg");
+    height           : 60rem;
+    position         : relative;
+    background-repeat: no-repeat;
 
-  .rsvp-form-container {
-    background: $white;
-    padding: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
+    .rsvp-form-container {
+        background  : $white;
+        padding     : 100px;
+        margin-left : auto;
+        margin-right: auto;
+        box-shadow  : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
 
-  .rsvp-alert {
-    display: none;
-    text-align: center;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .rsvp-alert {
+        display     : none;
+        text-align  : center;
+        width       : 50%;
+        margin-left : auto;
+        margin-right: auto;
+    }
 
-  .rsvp-validation-text {
-    color: $red;
-    display: none;
-  }
+    .rsvp-validation-text {
+        color  : $red;
+        display: none;
+    }
 
-  .holiday-dates-section {
-    display: none;
-  }
+    .holiday-dates-section {
+        display: none;
+    }
 
-  #rsvp-alert {
-    z-index: 100;
-  }
+    #rsvp-alert {
+        z-index: 100;
+    }
 }
 
 .travel-checklist-section {
-  max-width: 100%;
-  height: 600px;
-  background: url("../../img/travel-checklist.png");
+    max-width : 100%;
+    height    : 600px;
+    background: url("../../img/travel-checklist.png");
 }
 
 .footer {
-  background: $sage;
-  color: $white;
-  font-size: 18px;
-  padding: 10px !important;
+    background: $sage;
+    color     : $white;
+    font-size : 18px;
+    padding   : 10px !important;
 }
 
 .rotor {
-  font-family: $oswald;
+    font-family: $oswald;
 }
 
 .flipdown.flipdown__theme-dark .rotor,
 .flipdown.flipdown__theme-dark .rotor-top,
 .flipdown.flipdown__theme-dark .rotor-leaf-front {
-  background-color: $white;
-  color: $sage;
+    background-color: $white;
+    color           : $sage;
 }
 
 .flipdown.flipdown__theme-dark .rotor-bottom,
 .flipdown.flipdown__theme-dark .rotor-leaf-rear {
-  background-color: $white;
-  color: $sage;
+    background-color: $white;
+    color           : $sage;
 }
 
 .flipdown.flipdown__theme-dark .rotor:after {
-  border: solid 1px $white;
+    border: solid 1px $white;
 }
 
-.flipdown.flipdown__theme-dark
-  .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
-.flipdown.flipdown__theme-dark
-  .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
-  background-color: $white;
+.flipdown.flipdown__theme-dark .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
+.flipdown.flipdown__theme-dark .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+    background-color: $white;
 }
 
 .flipdown.flipdown__theme-dark .rotor-group-heading:before {
-  color: $white;
-  font-family: $josefin-sans;
+    color      : $white;
+    font-family: $josefin-sans;
 }
 
 .events-heading-big {
-  font-family: $libre-calson;
-  font-size: 5rem;
-  color: $sage;
+    font-family: $libre-calson;
+    font-size  : 5rem;
+    color      : $sage;
 }
 
 .events-heading-small {
-  font-family: $rogue-script;
-  font-size: 5rem;
-  color: $sage;
+    font-family: $rogue-script;
+    font-size  : 5rem;
+    color      : $sage;
 }
 
 .btn-sage {
-  color: $dustypink;
-  background-color: $sage;
-  border: 0;
+    color           : $dustypink;
+    background-color: $sage;
+    border          : 0;
 
-  &:hover {
-    color: $gold !important;
-    background: $sage !important;
-  }
+    &:hover {
+        color     : $gold !important;
+        background: $sage !important;
+    }
 }
 
-.gallery-modal-title {
-  letter-spacing: 1.2px;
+.gallery-modal-title,
+.map-modal-title {
+    letter-spacing: 1.2px;
 }
 
 @media screen and (min-width: 300px) {
-  .nav-icon-container {
-    height: 40px;
-    width: 40px;
-    font-size: 30px;
-  }
-
-  .nav-icon {
-    top: 1px;
-    left: 9px;
-  }
-
-  .home-section-container {
-    .left-section-main-content {
-      margin-top: 5rem !important;
+    .nav-icon-container {
+        height   : 40px;
+        width    : 40px;
+        font-size: 30px;
     }
-    .main-heading {
-      margin-top: 1rem !important;
-      font-size: 22px !important;
+
+    .nav-icon {
+        top : 1px;
+        left: 9px;
     }
-  }
 
-  #event-countdown {
-    display: none;
-  }
+    .home-section-container {
+        .left-section-main-content {
+            margin-top: 5rem !important;
+        }
 
-  .home-right-section-bg {
-    display: none;
-  }
+        .main-heading {
+            margin-top: 1rem !important;
+            font-size : 22px !important;
+        }
+    }
 
-  .event-card {
-    width: 100% !important;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    #event-countdown {
+        display: none;
+    }
 
-  .bouquet-column {
-    padding-top: 3rem !important;
-  }
+    .home-right-section-bg {
+        display: none;
+    }
 
-  .our-story-text-container {
-    padding: 30px !important;
-  }
-  .our-story-text {
-    padding: 20px !important;
-  }
+    .event-card {
+        width       : 100% !important;
+        margin-left : auto;
+        margin-right: auto;
+    }
 
-  .accommodation-label {
-    top: 44% !important;
-  }
+    .bouquet-column {
+        padding-top: 3rem !important;
+    }
 
-  .rsvp-form-container {
-    padding: 30px !important;
-  }
+    .our-story-text-container {
+        padding: 30px !important;
+    }
 
-  .events-heading-big,
-  .events-heading-small {
-    font-size: 4rem !important;
-  }
+    .our-story-text {
+        padding: 20px !important;
+    }
 
-  .section-space {
-    margin-top: 10rem !important;
-  }
+    .accommodation-label {
+        top: 44% !important;
+    }
 
-  .travel-checklist-section {
-    background-position: -195px 10px !important;
-  }
+    .rsvp-form-container {
+        padding: 30px !important;
+    }
+
+    .events-heading-big,
+    .events-heading-small {
+        font-size: 4rem !important;
+    }
+
+    .section-space {
+        margin-top: 10rem !important;
+    }
+
+    .travel-checklist-section {
+        background-position: -195px 10px !important;
+    }
 }
 
 @media screen and (min-width: 768px) {
-  .nav-icon-container {
-    height: 65px;
-    width: 65px;
-    font-size: 50px;
-  }
-
-  .nav-icon {
-    top: 1px;
-    left: 13px;
-  }
-
-  .home-section-container {
-    .left-section-main-content {
-      margin-top: 10rem !important;
+    .nav-icon-container {
+        height   : 65px;
+        width    : 65px;
+        font-size: 50px;
     }
 
-    .main-heading {
-      margin-top: 3rem !important;
-      font-size: 30px !important;
+    .nav-icon {
+        top : 1px;
+        left: 13px;
     }
-  }
 
-  #event-countdown {
-    display: flex;
-    width: 95% !important;
-    justify-content: center;
-  }
+    .home-section-container {
+        .left-section-main-content {
+            margin-top: 10rem !important;
+        }
 
-  .event-card {
-    width: 60% !important;
-  }
+        .main-heading {
+            margin-top: 3rem !important;
+            font-size : 30px !important;
+        }
+    }
 
-  .our-story-text-container {
-    padding: 50px !important;
-  }
+    #event-countdown {
+        display        : flex;
+        width          : 95% !important;
+        justify-content: center;
+    }
 
-  .our-story-text {
-    padding: 100px;
-  }
+    .event-card {
+        width: 60% !important;
+    }
 
-  .accommodation-label {
-    top: 50% !important;
-  }
+    .our-story-text-container {
+        padding: 50px !important;
+    }
 
-  .rsvp-form-container {
-    padding: 80px !important;
-  }
+    .our-story-text {
+        padding: 100px;
+    }
 
-  .events-heading-big,
-  .events-heading-small {
-    font-size: 5rem !important;
-  }
+    .accommodation-label {
+        top: 50% !important;
+    }
 
-  .section-space {
-    margin-top: 15rem !important;
-  }
+    .rsvp-form-container {
+        padding: 80px !important;
+    }
 
-  .travel-checklist-section {
-    background-position: 0px 0px !important;
-  }
+    .events-heading-big,
+    .events-heading-small {
+        font-size: 5rem !important;
+    }
+
+    .section-space {
+        margin-top: 15rem !important;
+    }
+
+    .travel-checklist-section {
+        background-position: 0px 0px !important;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-  .nav-icon-container {
-    height: 70px;
-    width: 70px;
-    font-size: 50px;
-  }
-
-  .nav-icon {
-    top: 2px;
-    left: 15px;
-  }
-
-  .home-section-container {
-    .left-section-main-content {
-      margin-top: 3rem !important;
+    .nav-icon-container {
+        height   : 70px;
+        width    : 70px;
+        font-size: 50px;
     }
 
-    .main-heading {
-      margin-top: 3rem !important;
+    .nav-icon {
+        top : 2px;
+        left: 15px;
     }
-  }
 
-  .home-right-section-bg {
-    display: inline-block;
-    background-position: 10% 25% !important;
-  }
+    .home-section-container {
+        .left-section-main-content {
+            margin-top: 3rem !important;
+        }
 
-  #event-countdown {
-    display: flex;
-    justify-content: center;
-  }
+        .main-heading {
+            margin-top: 3rem !important;
+        }
+    }
 
-  .event-card {
-    width: 100% !important;
-  }
+    .home-right-section-bg {
+        display            : inline-block;
+        background-position: 10% 25% !important;
+    }
 
-  .bouquet-column {
-    padding-top: 10rem !important;
-  }
+    #event-countdown {
+        display        : flex;
+        justify-content: center;
+    }
 
-  .our-story-text-container {
-    padding: 100px !important;
-  }
+    .event-card {
+        width: 100% !important;
+    }
 
-  .our-story-text {
-    padding: 100px;
-    padding: 80px 200px !important;
-  }
+    .bouquet-column {
+        padding-top: 10rem !important;
+    }
 
-  .accommodation-label {
-    top: 46% !important;
-  }
+    .our-story-text-container {
+        padding: 100px !important;
+    }
 
-  .rsvp-form-container {
-    padding: 100px !important;
-  }
+    .our-story-text {
+        padding: 100px;
+        padding: 80px 200px !important;
+    }
+
+    .accommodation-label {
+        top: 46% !important;
+    }
+
+    .rsvp-form-container {
+        padding: 100px !important;
+    }
 }
 
 @media screen and (min-width: 1500px) {
-  .home-right-section-bg {
-    display: inline-block;
-    background-position: 65% 25% !important;
-  }
-
-  .home-section-container {
-    .left-section-main-content {
-      margin-top: 5rem !important;
+    .home-right-section-bg {
+        display            : inline-block;
+        background-position: 65% 25% !important;
     }
-  }
+
+    .home-section-container {
+        .left-section-main-content {
+            margin-top: 5rem !important;
+        }
+    }
 }
 
 @media screen and (min-width: 1900px) {
-  .home-section-container {
-    .left-section-main-content {
-      margin-top: 12rem !important;
+    .home-section-container {
+        .left-section-main-content {
+            margin-top: 12rem !important;
+        }
     }
-  }
 }
 
 @import "./utilities";
