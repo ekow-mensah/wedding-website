@@ -403,6 +403,17 @@ body {
 }
 
 @media screen and (min-width: 300px) {
+    .overlay-content {
+        text-align  : left;
+        width       : 80%;
+        margin-left : auto;
+        margin-right: auto;
+    }
+
+    .overlay a {
+        width: 100%;
+    }
+
     .nav-icon-container {
         height   : 40px;
         width    : 40px;
@@ -474,6 +485,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+
+    .overlay-content {
+        margin-left : auto;
+        margin-right: auto;
+        width       : 80%;
+        text-align  : center;
+    }
+
     .nav-icon-container {
         height   : 65px;
         width    : 65px;
@@ -533,6 +552,17 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+    .overlay-content {
+        margin-left : 0px;
+        margin-right: 0px;
+        text-align  : center;
+        width       : 100%;
+    }
+
+    .overlay a {
+        width: 30%;
+    }
+
     .nav-icon-container {
         height   : 70px;
         width    : 70px;
