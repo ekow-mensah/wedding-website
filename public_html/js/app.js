@@ -142,7 +142,7 @@ const appModule = (function () {
             allValid = false;
         }
 
-        if (fields.event == null || fields.event.trim() == "") {
+        if (fields.event == "null" || fields.event.trim() == "") {
             $('#events-validation-text').html("Tell us what events you will be attending.");
             $('#events-validation-text').show();
             allValid = false;
