@@ -23,19 +23,25 @@ let ApiController = {
     let { ...params } = req.body;
 
     try {
-      await Guest.create(params);
-      const message = "Thank you for reserving your place.";
+      const existingGuest = await Guest.findOne({ firstname: params.firstname, lastname: params.lastname, email: params.email });
+      if (existingGuest) {
+        response = { status: "failed", message: "You have already reserved your place.", data: null }
+        return res.json(response);
+      } else {
+        await Guest.create(params);
+        const message = "Thank you for reserving your place.";
 
-      const data = {
-        from: "Yes2Mensah API <yes2mensah@gmail.com>",
-        to: "yes2mensah@gmail.com",
-        subject: "RSVP Notification",
-        text: "Hi Ekow and Yvonne " + params.firstname + " " + params.lastname + " has submitted their RSVP for the wedding in 2022. Kind Regards, Yes2Mensah API."
+        const data = {
+          from: "Yes2Mensah API <yes2mensah@gmail.com>",
+          to: "yes2mensah@gmail.com",
+          subject: "RSVP Notification",
+          text: "Hi Ekow and Yvonne " + params.firstname + " " + params.lastname + " has submitted their RSVP for the wedding in 2022. Kind Regards, Yes2Mensah API."
+        }
+        await mg.messages().send(data);
+
+        response = { status: "success", message, data: null };
+        return res.status(200).json(response);
       }
-      await mg.messages().send(data);
-
-      response = { status: "success", message, data: null };
-      return res.status(200).json(response);
     } catch (error) {
       console.log(error);
       response = {

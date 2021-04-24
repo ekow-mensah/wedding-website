@@ -194,7 +194,8 @@
       <div class="container accommodation-section-inner">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 p-3 text-center mx-auto accommodation-notice">
-            Please note these are some of the very popular hotels in Ghana. Nearer we will bring an updated list of accommodations which are 
+            Please note these are some of the very popular hotels in Ghana. Nearer we will bring an updated list of
+            accommodations which are
             closer to the venu. If you have any issues or queries, kindly contact us at yes2mensah@gmail.com.
           </div>
         </div>
@@ -249,10 +250,12 @@
     <h1 class="d-inline heading events-heading-big"> Are You </h1>
     <span class="events-heading-small"> Attending?</span>
   </div>
-  <div id="rsvp-alert" class="alert alert-dismissible fade show rsvp-alert p-3" role="alert">
-    <p class="result-text text-center m-0"></p>
-    <button type="button" class="rsvp-alert-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
+  <section id="rsvp-alert-section">
+    <div id="rsvp-alert" class="alert alert-dismissible fade show rsvp-alert p-3" role="alert">
+      <p class="result-text text-center m-0"></p>
+      <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  </section>
   <section id="rsvp" class="rsvp-section pt-3">
     <div class="container rsvp-form-container center">
       <section class="rsvp-form">
@@ -318,7 +321,10 @@
         <div class="col-sm-12 col-md-12 col-md-12">
           <div class="row">
             <div class="w-30">
-              <button class="btn btn-sage btn-submit-rsvp">Submit</button>
+              <button class="btn btn-sage btn-submit-rsvp">
+                <span class="spinner-border spinner-border-sm rsvp-spinner" role="status" aria-hidden="true"></span>
+                <span class="rsvp-button-text">Submit</span>
+              </button>
             </div>
           </div>
         </div>

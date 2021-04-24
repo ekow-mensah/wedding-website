@@ -9,7 +9,6 @@ const appModule = (function () {
         initOpenNavEvent();
         initCloseNavEvent();
         initNavLinkClickAction();
-        initCloseAlertEvent();
         initGalleryImageEnlargeEvent();
         openMapModal();
         $('#curved-heading').arctext({ radius: 300 });
@@ -55,11 +54,11 @@ const appModule = (function () {
     }
 
     let initCloseAlertEvent = function () {
-        $('.rsvp-alert-close').click(function () {
+        setTimeout(function () {
             $('#rsvp-alert').hide();
-            $(".rsvp-alert-close").hide();
-        })
+        }, 5000);
     }
+
     let getDisabledDates = function () {
         let disabledDates = [
             new Date(2022, 02, 27),
@@ -83,12 +82,19 @@ const appModule = (function () {
 
     let initRSVPClickAction = () => {
         $('.btn-submit-rsvp').click(function () {
+            $('.rsvp-spinner').css("display", "inline-block");
+            $('.rsvp-button-text').html("Processing...")
+            $('.btn-submit-rsvp').prop("disabled", true);
+
             let data = getInputFields();
             let allValid = validateFields(data);
+
             if (allValid) {
                 postData(data);
+            } else {
+                hideSpinner();
             }
-        })
+        });
     }
 
     let showHideDateSection = function () {
@@ -142,7 +148,7 @@ const appModule = (function () {
             allValid = false;
         }
 
-        if (fields.event == "null" || fields.event.trim() == "") {
+        if (fields.event == "null" || fields.event == null) {
             $('#events-validation-text').html("Tell us what events you will be attending.");
             $('#events-validation-text').show();
             allValid = false;
@@ -180,6 +186,7 @@ const appModule = (function () {
             dataType: "json",
             data: data,
             success: function (response) {
+                hideSpinner();
                 if (response.status == "success") {
                     $('#rsvp-alert').removeClass("alert-danger");
                     $('#rsvp-alert').addClass("alert-success");
@@ -190,19 +197,27 @@ const appModule = (function () {
                     $('.result-text').html(response.message);
                 }
                 $("#rsvp-alert").show();
-                $('.rsvp-alert-close');
+                $('.btn-close').show();
                 clearAllFields();
             },
             error: function (response) {
+                hideSpinner();
                 $('#rsvp-alert').addClass("alert-danger");
                 $('.result-text').html("Could not send your RSVP request. Please try again in a few minutes.");
                 $("#rsvp-alert").show();
-                $(".rsvp-alert-close").show();
-                $(".rsvp-alert-close").show();
+                $(".btn-close").show();
             }
         });
 
-        window.location.href = "#rsvp";
+
+        initCloseAlertEvent();
+        window.location.href = "#rsvp-alert-section";
+    }
+
+    let hideSpinner = function () {
+        $('.rsvp-spinner').hide();
+        $('.rsvp-button-text').html("Submit")
+        $('.btn-submit-rsvp').prop("disabled", false);
     }
 
 
